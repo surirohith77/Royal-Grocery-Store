@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f5f5f5</color>
+    <color name="colorPrimaryDark">#e0dede</color>
+    <color name="colorAccent">#01203a</color>
+
+    <color name="colorIcon">#9a0606</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+
+
+    <color name="primary_color">@color/colorAppTheme</color>
+
+    <color name="colorPrimaryDarkTransparent">#c7c7c7</color>
+    <color name="colorPrimaryRipple">#4200A995</color>
+    <color name="colorSelected">#c1daf9</color>
+    <color name="colorImageHolder">#e6eff5</color>
+
+    <!-- Color List-->
+    <color name="colorBackground">#e3efff</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorGradient">#B3000000</color>    <!--70%-->
+    <color name="colorBackgroundTransparent">#80000000</color>   <!--50%-->
+    <color name="colorGlassTransparent">#34000000</color>       <!--20%-->
+
+    <!-- Light -->
+    <color name="colorLightTransparent">#B3FFFFFF</color>       <!--73%-->
+    <color name="colorLightBackgroundTransparent">#80FFFFFF</color>   <!--50%-->
+    <color name="colorLightGlassTransparent">#34FFFFFF</color>       <!--20%-->
+
+    <!--Dark Text Color-->
+    <color name="colorDarkPrimaryText">#DF000000</color>
+    <color name="colorDarkSecondaryText">#8A000000</color>
+    <color name="colorDarkDisabledText">#62000000</color>
+    <color name="colorDarkDividersText">#1F000000</color>
+
+    <!--Light Text Color-->
+    <color name="colorLightPrimaryText">#FFFFFFFF</color>
+    <color name="colorLightSecondaryText">#B3FFFFFF</color>
+    <color name="colorLightDisabledText">#80FFFFFF</color>
+    <color name="colorLightDividersText">#1FFFFFFF</color>
+
+
+    <color name="colorGradientTop">#ebf9ff</color>
+    <color name="colorGradientCenter">#FFFFFF</color>
+    <color name="colorGradientBottom">#ebf9ff</color>
+
+    <color name="colorDarkButton">#8A000000</color>
+    <color name="colorLightButton">#B3FFFFFF</color>
+
+
+    <color name="colorBody1">#DE000000</color>
+    <color name="colorGreyLight">#DDDDDD</color>
+
+    <color name="colorRed">#f93939</color>
+    <color name="colorYellow">#f5c35d</color>
+    <color name="colorGreen">#57ae57</color>
+    <color name="colorGrey">#9E9E9E</color>
+    <color name="colorBlue">#2196F3</color>
+    <color name="colorIndigo">#3F51B5</color>
+    <color name="colorBlueGrey">#607D8B</color>
+    <color name="list_text1">#212121</color>
+    <color name="list_text2">#727272</color>
+
+    <color name="colorAppTheme">#7EAB36</color>
+    <color name="colorPlaceHolder">#e5f0ff</color>
+
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+
+
+    <!-- colors for tab and screent text -->
+
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+
+    <color name="bg">#587DA2</color>
+    <color name="color_transparent"> #4D000000</color>
+    <color name="color_site"> #ff5a5f</color>
+    <color name="color_text_bg"> #d5d5d6</color>
+    <color name="color_light_skyblue"> #a6cedb</color>
+</resources>
+

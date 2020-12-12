@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.Activities.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:lottie_fileName="email_sent.json"
+            app:lottie_autoPlay="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:lottie_loop="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_below="@+id/lottie"
+            android:text="Verify Your email"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/alata"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:id="@+id/tvVerifyEmail"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tvVerifyEmail"
+            android:id="@+id/tvVerifyEmailDesc"
+            android:text="Please enter the 4 digit verification code we sent to "
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:fontFamily="@font/alata"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etOtp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_below="@+id/tvVerifyEmailDesc"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter OTP"
+                android:fontFamily="@font/alata"
+                android:padding="15dp"
+                android:textSize="12sp"
+                android:id="@+id/etOtpp"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/alata"
+            android:text="Verify"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:background="@drawable/btn_bg_site"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnVerify"
+            android:textStyle="bold"
+            android:layout_below="@+id/etOtp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

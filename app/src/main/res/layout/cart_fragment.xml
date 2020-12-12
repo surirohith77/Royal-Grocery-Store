@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:id="@+id/list_ll_empty_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+           android:layout_marginTop="25dp"
+           android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/list_iv_empty_image"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:contentDescription="image reason"
+                app:srcCompat="@drawable/dog_with_towel" />
+
+            <TextView
+                android:id="@+id/list_tv_empty_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="Order's List is Empty" />
+        </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cardTotalAmt"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp">
+
+
+
+            <!-- <View
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="#EAE3E3"
+                 android:layout_marginTop="3dp"
+                 android:layout_marginStart="15dp"
+                 android:layout_marginEnd="15dp"
+                 android:layout_marginBottom="10dp"
+                 android:paddingTop="10dp"
+                 />-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <EditText
+                    android:id="@+id/etCoupon"
+                    android:layout_width="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:inputType="textCapWords"
+                    android:fontFamily="@font/alata"
+                    android:hint="Enter Coupon Here"
+                    android:textColor="#000"
+                    android:popupBackground="@color/colorAccent" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/alata"
+                    android:text="Apply"
+                    android:textColor="#fff"
+                    android:background="@drawable/btn_bg_bank"
+                    android:id="@+id/btnLogin"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EAE3E3"
+                android:paddingTop="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cart Total"
+                    android:id="@+id/tvSubtotal"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/alata"
+                    android:textColor="@color/colorAccent"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/tvCartAmt"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/alata"
+                    android:textColor="@color/colorAccent"
+                    android:layout_alignParentEnd="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Charge"
+                    android:id="@+id/tvCgst"
+                    android:layout_below="@+id/tvSubtotal"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/alata"
+                    android:textColor="@color/colorAccent"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/tvDeliveryAmt"
+                    android:layout_below="@+id/tvSubtotal"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/alata"
+                    android:textColor="@color/colorAccent"
+                    android:layout_alignParentEnd="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SGST 9%"
+                    android:id="@+id/tvSgst"
+                    android:layout_below="@+id/tvCgst"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/alata"
+                    android:textColor="@color/colorAccent"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u20B9 1,121.19"
+                    android:id="@+id/tvSgstPrice"
+                    android:layout_below="@+id/tvDeliveryAmt"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/alata"
+                    android:textColor="@color/colorAccent"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:id="@+id/tvTotal"
+                    android:layout_below="@+id/tvSgst"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/alata"
+                    android:textColor="@color/colorAccent"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/tvTotalAmt"
+                    android:layout_below="@+id/tvSgstPrice"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/alata"
+                    android:textColor="@color/colorAccent"
+                    android:layout_alignParentEnd="true"
+                    />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/alata"
+                    android:text="Check Out"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:background="@drawable/btn_bg_bank"
+                    android:id="@+id/btnCheckOut"
+                    android:layout_below="@+id/tvTotalAmt"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"/>
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

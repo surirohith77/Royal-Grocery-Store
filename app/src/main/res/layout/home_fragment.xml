@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorEnabled="true"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#fff"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#fff"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Browse Categories"
+                android:fontFamily="@font/alata"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/tvBrowseCategories"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:fontFamily="@font/alata"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tvViewAll"
+                android:layout_alignParentEnd="true"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvCategoryIcon"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/tvBrowseCategories"
+                android:layoutAnimation="@anim/layout_animation_right_to_left"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Groceries"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/alata"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            android:fontFamily="@font/alata"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvViewAllGroceries"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_groceries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutAnimation="@anim/layout_animation_right_to_left"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non Veg"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/alata"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            android:fontFamily="@font/alata"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvViewAllNonveg"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_nonveg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layoutAnimation="@anim/layout_animation_down_to_up"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vegetables"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/alata"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            android:fontFamily="@font/alata"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvViewAllVegetable"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_vegetables"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layoutAnimation="@anim/layout_animation_right_to_left"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soft Drinks"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/alata"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            android:fontFamily="@font/alata"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvViewAllSoftDrink"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_softdrinks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layoutAnimation="@anim/layout_animation_down_to_up"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:id="@+id/list_ll_empty_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/list_iv_empty_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:contentDescription="image reason"
+                app:srcCompat="@drawable/ic_empty_list" />
+
+            <TextView
+                android:id="@+id/list_tv_empty_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="Order's List is Empty" />
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

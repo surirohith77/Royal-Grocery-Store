@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        app:cardCornerRadius="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:src="@drawable/toordal"
+                android:id="@+id/ivItem"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ivItem"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/alata"
+                android:text="Tur Dal (1 KG) "
+                android:id="@+id/tvProduct"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/tvSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvProduct"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="-1dp"
+                android:layout_toEndOf="@+id/ivItem"
+                android:fontFamily="@font/alata"
+                android:text="Save \u20B9 20"
+                android:textColor="@color/colorRed"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_alignParentEnd="true"
+                android:layout_below="@+id/tvProduct"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/alata"
+                android:text="MRP \u20B9 123"
+                android:textSize="12sp"
+                android:id="@+id/tvMRP"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivItem"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/alata"
+                android:text="RGS Price \u20B9 123"
+                android:textColor="@color/colorGreen"
+                android:textSize="12sp"
+                android:id="@+id/tvRGSPrice"/>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:fontFamily="@font/alata"
+                android:text="Add to Cart"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:background="@drawable/btn_bg_bank"
+                android:layout_below="@+id/ivItem"
+                android:id="@+id/btnAddtocart"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnAddtocart"
+                android:id="@+id/relativeQty"
+                android:visibility="gone"
+              >
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_plus2"
+                    android:id="@+id/ivPlus"
+                    android:layout_alignParentEnd="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                  android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/ivPlus"
+                    android:fontFamily="@font/alata"
+                    android:text="1"
+                    android:textSize="14sp"
+                    android:id="@+id/tvQty"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_minus2"
+                    android:id="@+id/ivminus"
+                    android:layout_toStartOf="@+id/tvQty"/>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

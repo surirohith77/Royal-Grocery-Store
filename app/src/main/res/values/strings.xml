@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Royal Grocery Store</string>
+    <string name="error_connection_request_failed">Network connection request failed, Try again!</string>
+    <string name="press_again_to_exit">Press again to exit</string>
+    <string name="error_no_internet_connection">No internet connection</string>
+    <string name="error_invalid_data">Invalid data</string>
+    <string name="url">https://www.royalgrocerystore.com/Mobileservices.aspx?</string>
+</resources>
